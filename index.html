@@ -11,17 +11,17 @@
     <div id="wrapper">
         <h2>cm to inches</h2>
         <div class="inputdiv">
-            <input type="text" id="input" placeholder="temprature in fahrenheit">
+            <input type="text" id="input" placeholder="please enter temprature in fahrenheit">
         </div>
         <div>
-            <button type="submit" onclick="convert()">Convert to inches</button>
+            <button type="submit" onclick="convert()">Convert to celsius</button>
         </div>
         <div id="result">
 
         </div>
     </div>
     <script>
-        function covert(){
+        function convert(){
             const fahrenheit=Number(document.getElementById("input").value)
             const celsius=(fahrenheit-32)*5/9;
             const result=document.getElementById("result");
